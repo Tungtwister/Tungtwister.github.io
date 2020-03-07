@@ -7,7 +7,7 @@
 <section id="forms" class="forms">
 	<form>
 		<label for="name">Name:</label>
-		<input type="text" id="name" name="name"><br>
+		<input type="text" id="name" name="name" required><br>
 
 		<label for="prefix">Preferred Prefix:</label>
 		<select id="prefix" name="prefix">
@@ -21,16 +21,16 @@
 		</select><br>
 
 		<label for="email">Email:</label>
-		<input type="email" id="email" name="email"><br>
+		<input type="email" id="email" name="email" required><br>
 
 		<label for="number">Number:</label>
 		<input type="text" id="number" name="number"><br>
 
 		<label for="subject">Subject:</label>
-		<input type="text" id="subject" name="subject"><br>
+		<input type="text" id="subject" name="subject" required><br>
 
 		<label for="message">Message:</label>
-		<textarea id="message" name="message" rows="5" cols="40"></textarea>
+		<textarea id="message" name="message" rows="5" cols="40" required></textarea>
 
 		<br>
 		<input type="submit" value="Submit">
