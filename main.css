@@ -1,8 +1,11 @@
+html{
+  height: 100%;
+}
 body {
 	height: 100%;
 	margin: 0;
 	text-align: center;
-	width: 100%;
+
 }
 
 nav {
@@ -29,6 +32,40 @@ nav a.active {
   color: white;
 }
 
-h1 {
-  font-family: Georgia, serif;
+.icon {
+  float: left;
+  border: 0px;
 }
+
+.parallax {
+  /* The image used */
+  background-image: url("cactus.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+}
+
+.parallax h3 {
+  padding-top: 400px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  margin: 0;
+}
+
+.main {
+  height:1000px;
+  background-color:white;
+  font-size:36px;
+}
+
