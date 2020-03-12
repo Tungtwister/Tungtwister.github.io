@@ -31,9 +31,18 @@ header nav {
 }
 
 header a {
+  color: black;
+  font-size: 17px;
   padding: 0 20px;
   margin: 0;
 }
+
+header a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
 
 header p {
   padding: 0 20px;
