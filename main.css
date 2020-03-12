@@ -1,6 +1,10 @@
+html{
+  height: 100%;
+}
 body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
+  height: 100%;
 }
 
 header {
@@ -38,8 +42,11 @@ header p {
   align-items: center;
   background-image: url('blueuniverse.jpg');
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; 
   color: #ffffff;
-  height: 500px;
+  height: 100%;
   text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
@@ -59,6 +66,7 @@ section .row img {
   margin: 0 0 30px;
   width: 100%;
 }
+
 
 .col-md-6 {
   margin: 0 0 30px;
@@ -84,7 +92,9 @@ section .row img {
 }
 
 footer {
-  font-size: 12px;
+  background-color: #2a2a61;
+  color: #ffffff; 
+  font-size: 15px;
   padding: 20px 0;
 }
 
