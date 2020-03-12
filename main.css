@@ -1,7 +1,10 @@
 html{
   height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 body {
+  background-color: #e0e0eb;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   height: 100%;
