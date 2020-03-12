@@ -25,6 +25,10 @@ header h1 {
   margin: 0;
 }
 
+header i{
+  size: 50px;
+}
+
 header nav {
   display: flex;
   justify-content: flex-end;
