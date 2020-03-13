@@ -83,6 +83,26 @@ section .row img {
   width: 100%;
 }
 
+.col-sm-6 {
+  font-size: 18px;
+}
+
+#main {
+
+}
+
+#portfolio {
+  height: 500px;
+  background-color: #ffffff;
+}
+
+.container { 
+  width: 100%;
+  padding-right: 20%;
+  padding-left: 20%;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .col-md-6 {
   margin: 0 0 30px;
@@ -113,6 +133,7 @@ footer {
   font-size: 15px;
   padding: 20px 0;
 }
+
 
 footer .col-sm-8 {
   display: flex;
