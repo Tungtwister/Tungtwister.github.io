@@ -57,7 +57,7 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('blueuniverse.jpg');
+  background-image: url('./images/blueuniverse.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
