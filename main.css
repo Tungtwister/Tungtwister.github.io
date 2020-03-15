@@ -93,9 +93,25 @@ section .row img {
 }
 
 #portfolio {
-  height: 500px;
-  background-color: #ffffff;
+  height: 800px;
+  background-color: #ccccff;
 }
+
+#portfolio a {
+  height: 300px;
+  padding: 10px;
+  border-style: groove;
+  color: black;
+
+}
+
+#portfolio a:hover {
+  color: white;
+  background-color: #99bbff;
+  text-decoration: none;
+}
+
+
 
 .container { 
   width: 100%;
