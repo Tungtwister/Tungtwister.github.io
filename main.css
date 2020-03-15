@@ -111,8 +111,6 @@ section .row img {
   text-decoration: none;
 }
 
-
-
 .container { 
   width: 100%;
   padding-right: 20%;
@@ -164,4 +162,33 @@ footer ul {
 footer li img {
   width: 32px;
   height: 32px;
+}
+
+#footertop {
+  border-style: solid;
+  color: black;
+  font-size: 17px;
+  padding: 20px 20px;
+  margin: 30px;
+}
+
+#footertop a {
+  color: white;
+  font-size: 17px;
+  padding: 10px 20px;
+  margin: 30px;
+}
+
+#footertop a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: black;
+  text-decoration: none;
 }
