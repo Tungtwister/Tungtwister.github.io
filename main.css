@@ -92,6 +92,10 @@ section .row img {
 
 }
 
+#skills {
+  background-color: #e6e6ff;
+}
+
 #portfolio {
   height: 800px;
   background-color: #ccccff;
