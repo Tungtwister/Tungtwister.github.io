@@ -97,12 +97,12 @@ section .row img {
 }
 
 #portfolio {
-  height: 800px;
+  height: 1400px;
   background-color: #ccccff;
 }
 
 #portfolio a {
-  height: 300px;
+  height: 400px;
   padding: 10px;
   border-style: groove;
   color: black;
