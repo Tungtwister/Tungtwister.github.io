@@ -12,10 +12,15 @@ html {
   );
 
   --imp-text-color: #c770f0;
+  --imp-text-color2: #1e5e29;
 }
 
 .purple {
   color: var(--imp-text-color) !important;
+}
+
+.green {
+  color: var(--imp-text-color2) !important;
 }
 
 button:focus {
@@ -32,7 +37,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: #041609;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -76,7 +81,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #1a2e22a9 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -257,7 +262,7 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-image: var(--image-gradient), url(./Assets/leafback2.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -281,17 +286,17 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: #258335;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: #258335 !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: #258335 !important;
 }
 
 @media (max-width: 767px) {
@@ -402,7 +407,7 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: rgb(10, 22, 15);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
