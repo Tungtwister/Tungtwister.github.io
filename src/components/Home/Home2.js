@@ -1,13 +1,20 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 import myImg from "../../Assets/headshot.jpg";
-// import Tilt from "react-parallax-tilt";
+import Techstack from "./Techstack";
+import Aboutcard from "./AboutCard";
+import laptopImg from "../../Assets/about.png";
+import Toolstack from "./Toolstack";
+
 import {
   AiFillGithub,
-  AiOutlineTwitter,
+  AiOutlineMail,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+
 
 function Home2() {
   return (
@@ -19,7 +26,8 @@ function Home2() {
               LET ME <span className="green"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
+              WIP
+              {/* I fell in love with programming and I have at least learnt
               something, I think… 🤷‍♂️
               <br />
               <br />I am fluent in classics like
@@ -49,23 +57,183 @@ function Home2() {
               &nbsp; like
               <i>
                 <b className="green"> React.js and Next.js</b>
-              </i>
+              </i> */}
             </p>
           </Col>
           <Col md={4} className="myAvtar">
               <img src={myImg} className="rounded-circle" alt="avatar" />
           </Col>
         </Row>
+      </Container>
+      <Container>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
+            <h1>Experience</h1>
+          </Col>
+          <VerticalTimeline>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: 'rgb(26, 77, 46)', color: '#fff' }}
+              contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+              date="2011 - present"
+              dateClassName="home-timeline-date"
+              iconStyle={{ background: 'rgb(26, 77, 46)', color: '#fff' }}
+            >
+              <h3 
+                className="vertical-timeline-element-title"
+                style={{ textAlign: "left" }}
+              >
+                  Data Science Engineer
+              </h3>
+              <h4 
+                className="vertical-timeline-element-subtitle"
+                style={{ textAlign: "left" }}
+              >
+                Irvine, CA
+              </h4>
+              <p>
+                Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              dateClassName="home-timeline-date"
+              date="2010 - 2011"
+              iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}
+            >
+              <h3 
+                className="vertical-timeline-element-title"
+                style={{ textAlign: "left" }}
+              >
+                  Systems Engineer, MES
+              </h3>
+              <h4 
+                className="vertical-timeline-element-subtitle"
+                style={{ textAlign: "left" }}
+              >
+                Irvine, CA
+              </h4>
+              <p>
+                Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              dateClassName="home-timeline-date"
+              date="2008 - 2010"
+              iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}
+            >
+              <h3 
+                className="vertical-timeline-element-title"
+                style={{ textAlign: "left" }}
+              >
+                  Associate Machine Learning Developer
+              </h3>
+              <h4 
+                className="vertical-timeline-element-subtitle"
+                style={{ textAlign: "left" }}
+              >
+                Irvine, CA
+              </h4>
+              <p>
+                User Experience, Visual Design
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              dateClassName="home-timeline-date"
+              date="2006 - 2008"
+              iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}
+            >
+              <h3 
+                className="vertical-timeline-element-title"
+                style={{ textAlign: "left" }}
+              >
+                  Associate Systems Engineer, MES
+              </h3>
+              <h4 
+                className="vertical-timeline-element-subtitle"
+                style={{ textAlign: "left" }}
+              >
+                Irvine, CA
+              </h4>
+              <p>
+                User Experience, Visual Design
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              dateClassName="home-timeline-date"
+              date="2006 - 2008"
+              iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}
+            >
+              <h3 
+                className="vertical-timeline-element-title"
+                style={{ textAlign: "left" }}
+              >
+                  Curriculum Developer
+              </h3>
+              <h4 
+                className="vertical-timeline-element-subtitle"
+                style={{ textAlign: "left" }}
+              >
+                Remote
+              </h4>
+              <p>
+                User Experience, Visual Design
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              dateClassName="home-timeline-date"
+              date="2006 - 2008"
+              iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}
+            >
+              <h3 
+                className="vertical-timeline-element-title"
+                style={{ textAlign: "left" }}
+              >
+                  Software Engineer Intern
+              </h3>
+              <h4 
+                className="vertical-timeline-element-subtitle"
+                style={{ textAlign: "left" }}
+              >
+                Riverside, CA
+              </h4>
+              <p>
+                User Experience, Visual Design
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}
+            />
+          </VerticalTimeline>
+        </Row>
+      </Container>
+      <Container fluid className="about-section">
+        <h1 className="project-heading">
+          Professional <strong className="green">Skillset </strong>
+        </h1>
+
+        <Techstack />
+
+        <h1 className="project-heading">
+          <strong className="green">Tools</strong> I use
+        </h1>
+        <Toolstack />
+      </Container>
+      <Container>
+          <Row>
+            <Col md={12} className="home-about-social">
+              <h1>Reach Out to me!</h1>
+              <p>
+                Feel free to <span className="green">connect </span>with me
+              </p>
+              <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/Tungtwister"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -75,17 +243,17 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="mailto:austin.tung56@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <AiOutlineMail />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/atung1/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -95,7 +263,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/austintungg/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
