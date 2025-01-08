@@ -4,9 +4,8 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import myImg from "../../Assets/headshot.jpg";
 import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import Projects from "../Projects/Projects";
 
 import {
   AiFillGithub,
@@ -74,9 +73,9 @@ function Home2() {
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               contentStyle={{ background: 'rgb(26, 77, 46)', color: '#fff' }}
-              contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+              contentArrowStyle={{ borderRight: '7px solid  rgb(26, 77, 46)' }}
+              dateClassName="home-timeline-date-right"
               date="2011 - present"
-              dateClassName="home-timeline-date"
               iconStyle={{ background: 'rgb(26, 77, 46)', color: '#fff' }}
             >
               <h3 
@@ -97,7 +96,7 @@ function Home2() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              dateClassName="home-timeline-date"
+              dateClassName="home-timeline-date-left"
               date="2010 - 2011"
               iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}
             >
@@ -119,7 +118,7 @@ function Home2() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              dateClassName="home-timeline-date"
+              dateClassName="home-timeline-date-right"
               date="2008 - 2010"
               iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}
             >
@@ -141,7 +140,7 @@ function Home2() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              dateClassName="home-timeline-date"
+              dateClassName="home-timeline-date-left"
               date="2006 - 2008"
               iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}
             >
@@ -163,7 +162,7 @@ function Home2() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              dateClassName="home-timeline-date"
+              dateClassName="home-timeline-date-right"
               date="2006 - 2008"
               iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}
             >
@@ -185,7 +184,7 @@ function Home2() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              dateClassName="home-timeline-date"
+              dateClassName="home-timeline-date-left"
               date="2006 - 2008"
               iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}
             >
@@ -223,6 +222,8 @@ function Home2() {
         </h1>
         <Toolstack />
       </Container>
+      {/* Projects Section */}
+      <Projects />
       <Container>
           <Row>
             <Col md={12} className="home-about-social">

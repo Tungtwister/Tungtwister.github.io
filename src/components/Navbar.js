@@ -10,8 +10,6 @@ import { Link } from "react-router-dom";
 import {
   // AiFillStar,
   AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -69,7 +67,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item> */}
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/project"
@@ -80,7 +78,7 @@ function NavBar() {
                 />{" "}
                 Projects
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item>
               <Nav.Link

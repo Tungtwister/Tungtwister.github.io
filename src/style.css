@@ -199,7 +199,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #E8DFCA;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -329,7 +329,7 @@ button:focus {
 }
 
 .home-about-description {
-  color: white !important;
+  color: black !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -344,7 +344,7 @@ button:focus {
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .home-about-social-links {
@@ -393,9 +393,14 @@ button:focus {
   text-shadow: 0 0 2px #1e5e29;
 }
 
-.home-timeline-date {
-  color: #fff
+.home-timeline-date-right {
+  color: #000000;
+  transform: translateX(-40%)
 }
+.home-timeline-date-left {
+  color: #000000;
+}
+
 
 .social-icons {
   display: inline-block !important;
