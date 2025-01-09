@@ -25,38 +25,14 @@ function Home2() {
               LET ME <span className="green"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              WIP
-              {/* I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="green"> C++, Javascript and Go. </b>
-              </i>
+  
+              I’m [Your Name], a passionate [your field/expertise] with a focus on [your specialty or unique value]. With experience in [specific areas or skills], I thrive on solving complex challenges and creating impactful solutions.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="green">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="green">
-                  Blockchain.
-                </b>
-              </i>
+              Here, you’ll find my portfolio, insights, and projects that showcase my work in [your field, e.g., data science, machine learning, etc.]. Whether you’re here to collaborate, learn more about my journey, or explore my services, I’m excited to share my world with you.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="green">Node.js</b> and
-              <i>
-                <b className="green">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="green"> React.js and Next.js</b>
-              </i> */}
+              Feel free to connect, explore, and reach out—I’d love to hear from you!
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -96,6 +72,8 @@ function Home2() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
+              contentStyle={{ background: 'rgb(245, 239, 230)', color: '#000' }}
+              contentArrowStyle={{ borderRight: '7px solid  rgb(245, 239, 230)' }}
               dateClassName="home-timeline-date-left"
               date="2010 - 2011"
               iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}
@@ -118,6 +96,8 @@ function Home2() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
+              contentStyle={{ background: 'rgb(245, 239, 230)', color: '#000' }}
+              contentArrowStyle={{ borderRight: '7px solid  rgb(245, 239, 230)' }}
               dateClassName="home-timeline-date-right"
               date="2008 - 2010"
               iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}
@@ -140,6 +120,8 @@ function Home2() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
+              contentStyle={{ background: 'rgb(245, 239, 230)', color: '#000' }}
+              contentArrowStyle={{ borderRight: '7px solid  rgb(245, 239, 230)' }}
               dateClassName="home-timeline-date-left"
               date="2006 - 2008"
               iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}
@@ -162,6 +144,8 @@ function Home2() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
+              contentStyle={{ background: 'rgb(245, 239, 230)', color: '#000' }}
+              contentArrowStyle={{ borderRight: '7px solid  rgb(245, 239, 230)' }}
               dateClassName="home-timeline-date-right"
               date="2006 - 2008"
               iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}
@@ -184,6 +168,8 @@ function Home2() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
+              contentStyle={{ background: 'rgb(245, 239, 230)', color: '#000' }}
+              contentArrowStyle={{ borderRight: '7px solid  rgb(245, 239, 230)' }}
               dateClassName="home-timeline-date-left"
               date="2006 - 2008"
               iconStyle={{ background: 'rgb(79, 111, 82)', color: '#fff' }}

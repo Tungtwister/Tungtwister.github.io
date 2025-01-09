@@ -62,18 +62,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #F5EFE6;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: #1A4D2E;
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: #4F6F52;
   border-radius: 12px;
 }
 
@@ -462,7 +462,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  /* background-image: var(--section-background-color) !important; */
 }
 
 .project-card {
@@ -474,9 +474,9 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 5px 3px rgba(101, 224, 162, 0.599) !important;
   color: white !important;
-  background-color: transparent !important;
+  background-color: rgb(26, 77, 46) !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -484,7 +484,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px rgba(10, 108, 57, 0.561) !important;
 }
 
 .blog-card {
@@ -546,7 +546,7 @@ button:focus {
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -560,7 +560,6 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
   color: rgb(255, 255, 255) !important;
 }
 
@@ -577,6 +576,7 @@ button:focus {
   box-shadow: 4px 5px 4px 3px rgba(4, 168, 18, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+  background-color: rgb(26, 77, 46);
 }
 
 @media (max-width: 767px) {
