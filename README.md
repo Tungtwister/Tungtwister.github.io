@@ -33,4 +33,4 @@ To run the website locally, follow these steps:
 Have questions or want to connect? Reach out at:
 
 - **Email**: austin.tung56@gmail.com
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/atung1/)
+- **LinkedIn**: [Austin Tung](https://www.linkedin.com/in/atung1/)
