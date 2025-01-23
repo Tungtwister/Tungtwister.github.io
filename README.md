@@ -2,7 +2,13 @@
 # Tungtwister.github.io
 
 Welcome to the repository for my personal website, a showcase of my work, skills, and projects! This site is designed to reflect my professional journey and serve as a hub for collaboration, inspiration, and connection.
-Special thanks to https://github.com/soumyajit4419/Portfolio, which I utilized as a template and starting point to add on features and designs.
+Special thanks to:
+https://github.com/soumyajit4419/Portfolio, 
+https://github.com/yujisatojr/react-portfolio-template,
+https://github.com/stephane-monnot/react-vertical-timeline,
+https://github.com/Dorota1997/react-frontend-dev-portfolio,
+https://github.com/saadpasta/developerFolio  
+Which I used as templates and inspiration to build my own website
 
 ## 🚀 Features
 - **Responsive Design**: Optimized for viewing on any device.

@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/AustinTung_Resume_2024T.docx.pdf";
+import pdf from "../../Assets/../Assets/AustinTung_Resume_2025.docx.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -18,7 +17,6 @@ function ResumeNew() {
   return (
     <div>
       <Container fluid className="resume-section">
-        <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
