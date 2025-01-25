@@ -25,7 +25,7 @@ function Home2() {
               Hi I'm <span className="green"> Austin Tung </span>
             </h1>
             <p className="home-about-body">
-              I am a Data Scientist with a passion for tackling complex challenges through innovative technology. \
+              I am a Data Scientist with a passion for tackling complex challenges through innovative technology.
               With expertise in Machine Learning, I’ve developed impactful solutions, including systems for anomaly detection and preventative maintenance in manufacturing, driving measurable results and creating value.
               <br />
               <br />

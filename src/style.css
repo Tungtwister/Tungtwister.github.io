@@ -255,7 +255,8 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/leafback2.jpg);
+  background-image: url(./Assets/leafback2.jpg);
+  background-color: #1A4D2E;
   background-position: top center;
   background-size: cover !important;
   background-attachment: fixed !important;
