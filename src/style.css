@@ -257,11 +257,21 @@ button:focus {
   z-index: -1;
   background-image: url(./Assets/leafback2.jpg);
   background-color: #1A4D2E;
-  background-position: top center;
   background-size: cover !important;
   background-attachment: fixed !important;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .home-section {
+    background-image: url(./Assets/leafback-mobile.jpg); /* Change to your mobile background image */
+    background-size: cover !important; /* Ensure the entire image covers the section */
+    background-attachment: scroll !important; /* Adjust as needed */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+  }
 }
 
 .home-content {
