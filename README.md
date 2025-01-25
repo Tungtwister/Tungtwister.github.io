@@ -14,7 +14,11 @@ Which I used as templates and inspiration to build my own website
 - **Responsive Design**: Optimized for viewing on any device.
 - **Minimalist Aesthetic**: A clean, nature-inspired design using a soft color palette.
 - **Dynamic Content**: Regularly updated with my latest projects and achievements.
-- **Portfolio Showcase**: Highlights my expertise in Computer and Data Science.
+
+## 🔧 Upcoming Features
+- **Projects Section**: A section to showcase personal projects outside of work.
+- **Light/Dark Mode**: An option to switch between a light or dark.
+
 
 
 ## 🛠️ Technologies Used

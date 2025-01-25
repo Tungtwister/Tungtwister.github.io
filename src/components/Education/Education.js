@@ -8,18 +8,24 @@ const Education = () => {
     {
       school: 'Georgia Institute of Technology',
       degree: 'Master of Science in Computer Science',
-      dates: 'January 2024 - December 2026',
-      description: 'Online Master of Science in Computer Science (OMSCS) program.',
+      dates: 'January 2024 - Expected December 2026',
       logo: Gatech,
-      bulletPoints: ['Lorem ipsum dolor sit amet.', 'Consectetur adipiscing elit.']
+      bulletPoints: [
+        'Renowned for its rigorous graduate programs in computing and engineering.',
+        'Coursework includes Machine Learning, Robotics AI Techniques, and Quantum Computing.',
+        'Strengthened software engineering practices through team-based projects, emphasizing scalability, version control (Git), and agile methodologies.'
+      ]
     },
     {
       school: 'University of California, Riverside',
       degree: 'Bachelor of Science in Computer Engineering',
       dates: 'September 2015 - December 2019',
-      description: 'Undergraduate degree in Computer Science.',
       logo: UCR,
-      bulletPoints: ['Lorem ipsum dolor sit amet.', 'Consectetur adipiscing elit.']
+      bulletPoints: [
+        'Top public research university with a focus on innovation and diversity.',
+        'Built a strong foundation in computer architecture, embedded systems, and machine learning.',
+        'Participated in collaborative team projects and coursework, developing a passion for using technology to solve real-world problems.'
+      ]
     }
   ];
 

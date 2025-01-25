@@ -11,7 +11,7 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #4F6F52;
   --imp-text-color2: #1e5e29;
 }
 
@@ -83,7 +83,7 @@ button:focus {
 .sticky {
   background-color: #1a2e22a9 !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(0, 76, 5, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -102,7 +102,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #E8DFCA!important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -149,7 +149,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #1A4D2E !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -264,7 +264,8 @@ button:focus {
   z-index: -1;
   background-image: var(--image-gradient), url(./Assets/leafback2.jpg);
   background-position: top center;
-  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-attachment: fixed !important;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
@@ -393,10 +394,19 @@ button:focus {
   text-shadow: 0 0 2px #1e5e29;
 }
 
-.home-timeline-date-right {
-  color: #000000;
-  transform: translateX(-40%)
+@media (min-width: 1168px) {
+  .home-timeline-date-right {
+    color: #000000; /* Change to your desired color */
+    text-align: left;
+  }
 }
+
+@media (max-width: 1167px) {
+  .home-timeline-date-right {
+    color: #fff; /* Change to your desired color */
+  }
+}
+
 .home-timeline-date-left {
   color: #000000;
 }

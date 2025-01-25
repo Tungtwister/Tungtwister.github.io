@@ -22,13 +22,21 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="green"> INTRODUCE </span> MYSELF
+              Hi I'm <span className="green"> Austin Tung </span>
             </h1>
             <p className="home-about-body">
-              I’m [Your Name], a passionate [your field/expertise] with a focus on [your specialty or unique value]. With experience in [specific areas or skills], I thrive on solving complex challenges and creating impactful solutions.
+              I am a Data Scientist with a passion for tackling complex challenges through innovative technology. \
+              With expertise in Machine Learning, I’ve developed impactful solutions, including systems for anomaly detection and preventative maintenance in manufacturing, driving measurable results and creating value.
               <br />
               <br />
-              Here, you’ll find my portfolio, insights, and projects that showcase my work in [your field, e.g., data science, machine learning, etc.]. Whether you’re here to collaborate, learn more about my journey, or explore my services, I’m excited to share my world with you.
+              Currently pursuing a Master’s degree in Computer Science at Georgia Tech, I am driven by a deep curiosity to learn and a commitment to excellence. 
+              Whether I’m building scalable systems or mentoring engineers, I thrive in environments that encourage collaboration and innovation.
+              <br />
+              <br />
+              In my free time, I enjoy traveling, kickboxing, playing video games, and exploring creative projects. I’m always excited to bring my skills and enthusiasm to teams that share a vision for meaningful impact.
+              <br />
+              <br />
+              Here, you’ll find my portfolio, insights, and projects that showcase my work. Whether you’re here to collaborate or learn more about my journey, I’m excited to share my world with you.
               <br />
               <br />
               Feel free to connect, explore, and reach out—I’d love to hear from you!
@@ -39,13 +47,11 @@ function Home2() {
           </Col>
         </Row>
       </Container>
-      <Container>
-        <Row>
-          <Col md={12} className="home-about-social">
-            <h1>Experience</h1>
-          </Col>
-          <Timeline />
-        </Row>
+      <Container className="tester">
+        <Col md={12} className="home-about-social">
+        <h1>Experience</h1>
+        </Col>
+        <Timeline />
       </Container>
       <Container>
         <Education />
@@ -63,7 +69,7 @@ function Home2() {
         <Toolstack />
       </Container>
       {/* Projects Section */}
-      <Projects />
+      {/* <Projects /> */}
       <Container>
           <Row>
             <Col md={12} className="home-about-social">
