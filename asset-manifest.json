@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.24793b9a.css",
+    "main.js": "/static/js/main.40764f5e.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/logo.png": "/static/media/logo.87322458b31081a16bb0.png",
+    "static/media/CroiClip.jpg": "/static/media/CroiClip.9d3fb5ceaa92dab17615.jpg",
+    "static/media/BanffAustin.jpg": "/static/media/BanffAustin.d40c0f98ba4e03ab06fd.jpg",
+    "static/media/leafback2.jpg": "/static/media/leafback2.2dbbc281aca1bef2baf5.jpg",
+    "static/media/gt-seal_logo.png": "/static/media/gt-seal_logo.6fbd4b36d2fed3286559.png",
+    "static/media/AustinTung_Resume_2025.docx.pdf": "/static/media/AustinTung_Resume_2025.docx.b54557b7e6034319512e.pdf",
+    "static/media/UC_Riverside_seal.png": "/static/media/UC_Riverside_seal.a68d3001c38067204d2d.png",
+    "static/media/headshot.jpg": "/static/media/headshot.b5f07312c76d5b185294.jpg",
+    "static/media/pre.svg": "/static/media/pre.0e41451d5b36ed45d467.svg",
+    "index.html": "/index.html",
+    "main.24793b9a.css.map": "/static/css/main.24793b9a.css.map",
+    "main.40764f5e.js.map": "/static/js/main.40764f5e.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24793b9a.css",
+    "static/js/main.40764f5e.js"
+  ]
+}
