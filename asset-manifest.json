@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.24793b9a.css",
-    "main.js": "/static/js/main.40764f5e.js",
+    "main.js": "/static/js/main.8ea80e76.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/logo.png": "/static/media/logo.87322458b31081a16bb0.png",
     "static/media/CroiClip.jpg": "/static/media/CroiClip.9d3fb5ceaa92dab17615.jpg",
@@ -14,11 +14,11 @@
     "static/media/pre.svg": "/static/media/pre.0e41451d5b36ed45d467.svg",
     "index.html": "/index.html",
     "main.24793b9a.css.map": "/static/css/main.24793b9a.css.map",
-    "main.40764f5e.js.map": "/static/js/main.40764f5e.js.map",
+    "main.8ea80e76.js.map": "/static/js/main.8ea80e76.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24793b9a.css",
-    "static/js/main.40764f5e.js"
+    "static/js/main.8ea80e76.js"
   ]
 }
