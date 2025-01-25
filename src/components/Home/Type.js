@@ -10,7 +10,8 @@ function Type() {
           "Data Scientist",
           "Graduate Student",
           "MES Engineer",
-          "Croissant's Dad"
+          "Croissant's Dad",
+          "Quantum Enthusiast",
         ],
         autoStart: true,
         loop: true,
