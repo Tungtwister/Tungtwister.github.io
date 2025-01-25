@@ -29,7 +29,7 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img src={myImg} className="rounded-circle" alt="avatar" />
+              <img src={myImg} className="avatar-icon"  alt="avatar" />
             </Col>
           </Row>
         </Container>

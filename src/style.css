@@ -247,13 +247,6 @@ button:focus {
     transform: rotate(0deg);
   }
 }
-#tsparticles {
-  position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
-}
 
 .home-header {
   padding-top: 80px !important;
@@ -308,6 +301,27 @@ button:focus {
   }
   .Typewriter__cursor {
     display: none !important;
+  }
+}
+
+.avatar-icon {
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+  width: 300px; /* Adjust size as needed */
+  height: 300px; /* Adjust size as needed */
+  border-radius: 50%; /* Make the image rounded */
+  object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .avatar-icon {
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+  }
+
+  .home-section {
+    text-align: center; /* Center text and other elements in the home section */
   }
 }
 
@@ -394,18 +408,26 @@ button:focus {
   text-shadow: 0 0 2px #1e5e29;
 }
 
+
 @media (min-width: 1168px) {
-  .home-timeline-date-right {
-    color: #000000; /* Change to your desired color */
+  .home-timeline-date-top {
+    color: #000000;
     text-align: left;
   }
 }
 
 @media (max-width: 1167px) {
-  .home-timeline-date-right {
-    color: #fff; /* Change to your desired color */
+  .home-timeline-date-top {
+    color: #fff;
   }
 }
+
+
+.home-timeline-date-right {
+  color: #000000;
+  text-align: left;
+}
+
 
 .home-timeline-date-left {
   color: #000000;

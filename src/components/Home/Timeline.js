@@ -9,7 +9,7 @@ function Timeline() {
               className="vertical-timeline-element--work"
               contentStyle={{ background: 'rgb(26, 77, 46)', color: '#fff' }}
               contentArrowStyle={{ borderRight: '7px solid  rgb(26, 77, 46)' }}
-              dateClassName="home-timeline-date-right"
+              dateClassName="home-timeline-date-top"
               date="2023 - present"
               iconStyle={{ background: 'rgb(26, 77, 46)', color: '#fff' }}
             >
