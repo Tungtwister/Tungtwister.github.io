@@ -1,15 +1,27 @@
 import React, { useState } from "react";
-import banffImg from "../../../Assets/BanffAustin.jpg";
-import croiImg from "../../../Assets/CroiClip.jpg";
-import headshotImg from "../../../Assets/headshot.jpg";
+import banffImg from "../../../Assets/pictures/BanffAustin.jpg";
+import croiImg from "../../../Assets/pictures/CroiClip.jpg";
+import profileImg from "../../../Assets/pictures/profile.jpeg";
+import bbqDogImg from "../../../Assets/pictures/bbq_dog.jpeg";
+import coolDogImg from "../../../Assets/pictures/cool_dog.jpeg";
+import familyPlaygroundImg from "../../../Assets/pictures/family_playground.jpeg";
+import peekingDogImg from "../../../Assets/pictures/peeking_dog.jpeg";
+import winkingFamilyImg from "../../../Assets/pictures/winking_family.jpeg";
+import useIsMobile from "../../../hooks/useIsMobile";
 
 const photos = [
-  { id: "banff", label: "Banff_Canada.jpg", src: banffImg, caption: "Banff, Canada 🏔️" },
-  { id: "croi",  label: "Croissant.jpg",    src: croiImg,  caption: "Croissant the Corgi 🐕" },
-  { id: "head",  label: "Headshot.jpg",     src: headshotImg, caption: "Professional headshot" },
+  { id: "profile",  label: "Profile.jpg",           src: profileImg,          caption: "Profile picture" },
+  { id: "banff",    label: "Banff_Canada.jpg",      src: banffImg,            caption: "Banff, Canada 🏔️" },
+  { id: "family",   label: "Family_Playground.jpg", src: familyPlaygroundImg, caption: "Family day at the playground 🎢" },
+  { id: "wink",     label: "Winking_Family.jpg",    src: winkingFamilyImg,    caption: "Family wink 😉" },
+  { id: "croi",     label: "Croissant.jpg",         src: croiImg,             caption: "Croissant the Corgi 🐕" },
+  { id: "bbq",      label: "BBQ_Dog.jpg",           src: bbqDogImg,           caption: "Croissant at the BBQ 🍖" },
+  { id: "cool",     label: "Cool_Dog.jpg",          src: coolDogImg,          caption: "Cool corgi vibes 😎" },
+  { id: "peeking",  label: "Peeking_Dog.jpg",       src: peekingDogImg,       caption: "Just peeking 👀" },
 ];
 
 function PicturesApp() {
+  const isMobile = useIsMobile();
   const [selected, setSelected] = useState(null);
 
   const viewing = photos.find((p) => p.id === selected);
@@ -72,6 +84,7 @@ function PicturesApp() {
           <button
             key={photo.id}
             onDoubleClick={() => setSelected(photo.id)}
+            onClick={() => isMobile && setSelected(photo.id)}
             style={{
               display: "flex", flexDirection: "column",
               alignItems: "center", gap: "6px",
@@ -100,7 +113,7 @@ function PicturesApp() {
         padding: "3px 8px",
         fontSize: "11px", fontFamily: "Tahoma, sans-serif", color: "#555",
       }}>
-        {photos.length} item(s) · Double-click to view
+        {photos.length} item(s) · {isMobile ? "Tap to view" : "Double-click to view"}
       </div>
     </div>
   );

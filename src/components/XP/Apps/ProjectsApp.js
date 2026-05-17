@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import txtIcon from "../../../Assets/icons/Generic Text Document.png";
+import useIsMobile from "../../../hooks/useIsMobile";
 
 const projects = [
   {
@@ -42,6 +43,7 @@ The contrast between "cutting-edge AI systems" and
 ];
 
 function ProjectsApp() {
+  const isMobile = useIsMobile();
   const [selected, setSelected] = useState(null);
   const [open, setOpen] = useState(null);
 
@@ -100,7 +102,7 @@ function ProjectsApp() {
           <button
             key={proj.id}
             onDoubleClick={() => setOpen(proj.id)}
-            onClick={() => setSelected(proj.id)}
+            onClick={() => (isMobile ? setOpen(proj.id) : setSelected(proj.id))}
             style={{
               display: "flex", flexDirection: "column",
               alignItems: "center", gap: "4px",
@@ -130,7 +132,7 @@ function ProjectsApp() {
         padding: "3px 8px",
         fontSize: "11px", fontFamily: "Tahoma, sans-serif", color: "#555",
       }}>
-        {projects.length} object(s) · Double-click to open
+        {projects.length} object(s) · {isMobile ? "Tap to open" : "Double-click to open"}
       </div>
     </div>
   );

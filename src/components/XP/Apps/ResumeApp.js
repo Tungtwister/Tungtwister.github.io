@@ -9,7 +9,7 @@ function ResumeApp() {
         padding: "4px 8px", display: "flex", gap: "8px", alignItems: "center",
       }}>
         <span style={{ fontSize: "11px", fontFamily: "Tahoma, sans-serif", color: "#555" }}>
-          My CV › Austin_Tung_Resume.pdf
+          My Resume › Austin_Tung_Resume.pdf
         </span>
         <a
           href={resumePdf}
@@ -27,7 +27,7 @@ function ResumeApp() {
       </div>
       <div style={{ flex: 1, overflow: "hidden" }}>
         <iframe
-          src={resumePdf}
+          src={`${resumePdf}#zoom=100`}
           title="Resume"
           style={{ width: "100%", height: "100%", border: "none" }}
         />

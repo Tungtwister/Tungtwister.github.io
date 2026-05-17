@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import myImg from "../../Assets/headshot.jpg";
+import myImg from "../../Assets/pictures/profile.jpeg";
 import winIcon from "../../Assets/icons/windowXP.png";
 
 function Login({ onLogin }) {

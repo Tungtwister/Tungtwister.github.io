@@ -1,5 +1,5 @@
 import React from "react";
-import myImg from "../../Assets/headshot.jpg";
+import myImg from "../../Assets/pictures/profile.jpeg";
 
 function StartMenu({ apps, onOpen, onClose }) {
   const leftApps = apps.filter((a) => a.startMenu === "left");

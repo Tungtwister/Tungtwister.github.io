@@ -1,9 +1,10 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect, useRef } from "react";
 import Boot from "./components/XP/Boot";
 import Login from "./components/XP/Login";
 import Desktop from "./components/XP/Desktop";
 import Taskbar from "./components/XP/Taskbar";
 import Window from "./components/XP/Window";
+import MobileShell from "./components/XP/MobileShell";
 import AboutApp from "./components/XP/Apps/AboutApp";
 import ProjectsApp from "./components/XP/Apps/ProjectsApp";
 import ResumeApp from "./components/XP/Apps/ResumeApp";
@@ -16,6 +17,7 @@ import iconFile from "./Assets/icons/Wordpad.png";
 import iconServer from "./Assets/icons/Command Prompt.png";
 import iconCamera from "./Assets/icons/My Pictures.png";
 import iconPhone from "./Assets/icons/Email.png";
+import useIsMobile from "./hooks/useIsMobile";
 import "./App.css";
 
 const APP_DEFS = [
@@ -24,7 +26,8 @@ const APP_DEFS = [
     label: "My Computer",
     icon: iconMyComputer,
     component: AboutApp,
-    defaultSize: { width: 520, height: 380 },
+    defaultSize: { width: 520, height: 500 },
+    defaultPosition: { x: 120, y: 40 },
     startMenu: "left",
     desktop: true,
   },
@@ -39,10 +42,11 @@ const APP_DEFS = [
   },
   {
     id: "resume",
-    label: "My CV",
+    label: "My Resume",
     icon: iconFile,
     component: ResumeApp,
-    defaultSize: { width: 620, height: 480 },
+    defaultSize: { width: 880, height: 1120 },
+    defaultPosition: { x: 100, y: 0 },
     startMenu: "left",
     desktop: true,
   },
@@ -51,7 +55,8 @@ const APP_DEFS = [
     label: "Command Prompt",
     icon: iconServer,
     component: CmdApp,
-    defaultSize: { width: 560, height: 340 },
+    defaultSize: { width: 560, height: 540 },
+    defaultPosition: { x: 670, y: 60 },
     startMenu: "left",
     desktop: true,
   },
@@ -84,9 +89,38 @@ const initWindows = () => {
 };
 
 function App() {
-  const [phase, setPhase] = useState("boot");
+  const isMobile = useIsMobile();
+  // Mobile users skip boot/login and land on the home screen directly.
+  const [phase, setPhase] = useState(isMobile ? "desktop" : "boot");
   const [windows, setWindows] = useState(initWindows);
   const [zCounter, setZCounter] = useState(10);
+
+  // If a viewer shrinks to mobile mid-boot or mid-login, skip them to desktop.
+  // (Inverse not handled: widening back to desktop keeps you past the intro.)
+  useEffect(() => {
+    if (isMobile && phase !== "desktop") {
+      setPhase("desktop");
+    }
+  }, [isMobile, phase]);
+
+  // Auto-open My Computer + Command Prompt the first time a desktop user
+  // lands on the desktop. Mobile uses MobileShell and is unaffected.
+  const autoOpenedRef = useRef(false);
+  useEffect(() => {
+    if (phase === "desktop" && !isMobile && !autoOpenedRef.current) {
+      autoOpenedRef.current = true;
+      setZCounter((z) => {
+        const aboutZ = z + 1;
+        const cmdZ = z + 2;
+        setWindows((w) => ({
+          ...w,
+          about: { open: true, minimized: false, z: aboutZ },
+          cmd:   { open: true, minimized: false, z: cmdZ },
+        }));
+        return cmdZ;
+      });
+    }
+  }, [phase, isMobile]);
 
   const bringToFront = useCallback((id) => {
     setZCounter((z) => {
@@ -123,6 +157,10 @@ function App() {
     return <Login onLogin={() => setPhase("desktop")} />;
   }
 
+  if (isMobile) {
+    return <MobileShell apps={APP_DEFS} />;
+  }
+
   return (
     <div style={{ width: "100vw", height: "100vh", overflow: "hidden", position: "relative" }}>
       <Desktop apps={APP_DEFS} onOpen={openApp}>
@@ -137,13 +175,14 @@ function App() {
               title={app.label}
               icon={app.icon}
               defaultSize={app.defaultSize}
+              defaultPosition={app.defaultPosition}
               isMinimized={win.minimized}
               zIndex={win.z}
               onClose={() => closeApp(app.id)}
               onMinimize={() => toggleMinimize(app.id)}
               onFocus={() => bringToFront(app.id)}
             >
-              <AppComponent />
+              <AppComponent onOpenApp={openApp} />
             </Window>
           );
         })}

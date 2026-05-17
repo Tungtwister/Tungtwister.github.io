@@ -33,11 +33,11 @@ function Boot({ onComplete }) {
           color: "#fff", letterSpacing: "2px",
           marginBottom: "4px",
         }}>
-          <span style={{ color: "#e8a400", fontWeight: "700" }}>Windows</span>
-          <span style={{ fontSize: "18px", marginLeft: "8px", fontStyle: "italic" }}>XP</span>
+          <span style={{ color: "#fff", fontWeight: "700" }}>Portfolio</span>
+          <span style={{ fontSize: "18px", marginLeft: "6px", fontStyle: "italic", color: "#e8a400", fontWeight: "700" }}>xp</span>
         </div>
         <div style={{ fontSize: "11px", color: "#aaa", letterSpacing: "1px" }}>
-          Professional
+          Austin Tung
         </div>
       </div>
 
