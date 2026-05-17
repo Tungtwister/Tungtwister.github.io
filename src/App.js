@@ -103,12 +103,40 @@ function App() {
     }
   }, [isMobile, phase]);
 
+  // Per-window position overrides — populated when we auto-open My Computer
+  // + Command Prompt so we can center them based on the live viewport size.
+  const [windowPositions, setWindowPositions] = useState({});
+
   // Auto-open My Computer + Command Prompt the first time a desktop user
   // lands on the desktop. Mobile uses MobileShell and is unaffected.
   const autoOpenedRef = useRef(false);
   useEffect(() => {
     if (phase === "desktop" && !isMobile && !autoOpenedRef.current) {
       autoOpenedRef.current = true;
+
+      // Compute centered positions for the pair (about | cmd)
+      const aboutDef = APP_DEFS.find((a) => a.id === "about");
+      const cmdDef   = APP_DEFS.find((a) => a.id === "cmd");
+      const aboutW = aboutDef.defaultSize.width;
+      const cmdW   = cmdDef.defaultSize.width;
+      const aboutH = aboutDef.defaultSize.height;
+      const cmdH   = cmdDef.defaultSize.height;
+      const gap    = 30;
+      const totalW = aboutW + gap + cmdW;
+      const taskbarH = 40;
+
+      const viewportW = window.innerWidth;
+      const viewportH = window.innerHeight - taskbarH;
+      const tallerH   = Math.max(aboutH, cmdH);
+
+      const startX = Math.max(20, Math.round((viewportW - totalW) / 2));
+      const startY = Math.max(20, Math.round((viewportH - tallerH) / 2));
+
+      setWindowPositions({
+        about: { x: startX,                     y: startY },
+        cmd:   { x: startX + aboutW + gap,      y: startY + 20 },
+      });
+
       setZCounter((z) => {
         const aboutZ = z + 1;
         const cmdZ = z + 2;
@@ -175,7 +203,7 @@ function App() {
               title={app.label}
               icon={app.icon}
               defaultSize={app.defaultSize}
-              defaultPosition={app.defaultPosition}
+              defaultPosition={windowPositions[app.id] || app.defaultPosition}
               isMinimized={win.minimized}
               zIndex={win.z}
               onClose={() => closeApp(app.id)}

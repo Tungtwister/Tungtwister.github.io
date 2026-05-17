@@ -146,7 +146,7 @@ const SPEC_ROWS = [
   { label: "Made in",          value: "California, USA" },
   { label: "System",           value: "Austin Tung v5.1" },
   { label: "Build",            value: "2026.05 SP1" },
-  { label: "Status",           value: "Online · Caffeinated" },
+  { label: "Status",           value: "Online" },
 
   { section: "Registration" },
   { label: "Registered to",    value: "QuidelOrtho" },
@@ -155,8 +155,8 @@ const SPEC_ROWS = [
 
   { section: "Computer" },
   { label: "Processor",        value: "Curiosity Core™ 3.0GHz" },
-  { label: "Memory",           value: "8GB (most reserved for snack thoughts)" },
-  { label: "Storage",          value: "~80 TB (mostly photos of corgis)" },
+  { label: "Memory",           value: "16GB (most reserved for snack thoughts)" },
+  { label: "Storage",          value: "2 PB (mostly photos of corgis)" },
   { label: "Graphics",         value: "Eyeballs v2.0 — dual monitor capable" },
   { label: "Network",          value: "San Diego · Wi-Fi only" },
   { label: "Audio",            value: "Lo-fi beats compatible" },
@@ -220,9 +220,9 @@ const EDUCATION = [
 
 const EXPERIENCE = [
   { date: "2026 – present", title: "AI/ML Engineer",            company: "QuidelOrtho" },
-  { date: "2023 – 2025",    title: "Data Scientist",            company: "Caltrol" },
+  { date: "2023 – 2025",    title: "Data Scientist & Systems Engineer",            company: "Caltrol" },
   { date: "2023",           title: "Associate ML Developer",    company: "Caltrol" },
-  { date: "2020 – 2023",    title: "Systems Engineer, MES",     company: "Caltrol" },
+  { date: "2020 – 2023",    title: "Associate Systems Engineer, MES",     company: "Caltrol" },
   { date: "2020 – 2021",    title: "Curriculum Developer",      company: "Intellibricks" },
   { date: "2020",           title: "Coding Instructor",         company: "CodeREV Kids" },
   { date: "2018",           title: "Software Engineer Intern",  company: "UCR Brain Game Center" },
@@ -233,10 +233,9 @@ function BackgroundTab() {
     <div style={{ fontFamily: tahoma, color: "#222" }}>
       <div style={firstSectionHeading}>Career path</div>
       <p style={{ ...xpBody, margin: 0 }}>
-        My path here wasn't linear. I started as a Systems Engineer working on
-        manufacturing execution systems, then drifted into data science and
-        machine learning, and somewhere in there started pursuing a Master's.
-        Now I'm shipping agentic workflows with LangGraph and MCP.
+        Started as a Systems Engineer working on
+        manufacturing execution systems, shifted into data science and
+        machine learning as a Data Scientist. Now working as an AI/ML Engineer building agentic workflows.
       </p>
 
       <div style={sectionHeading}>Education</div>

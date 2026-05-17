@@ -29,4 +29,4 @@ Server/node_modules
 Server/config.js
 
 # Claude Code
-.claude/
+.claude/ 
