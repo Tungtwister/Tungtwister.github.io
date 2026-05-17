@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#F5F5F5" />
+
+  <!-- Desk -->
+  <rect x="200" y="300" width="400" height="20" fill="#B3B3B3" />
+  <rect x="220" y="320" width="20" height="160" fill="#E6E6E6" />
+  <rect x="560" y="320" width="20" height="160" fill="#E6E6E6" />
+
+  <!-- Chair -->
+  <rect x="450" y="400" width="60" height="80" rx="10" ry="10" fill="#C07F4D" />
+  <circle cx="480" cy="490" r="30" fill="#C07F4D" />
+
+  <!-- Monitor -->
+  <rect x="300" y="240" width="200" height="120" rx="10" ry="10" fill="#333" />
+  <rect x="310" y="250" width="180" height="100" fill="#A0D1E8" />
+  <rect x="375" y="370" width="70" height="10" rx="5" ry="5" fill="#333" />
+
+  <!-- Person -->
+  <circle cx="450" cy="250" r="30" fill="#F1C27D" />
+  <rect x="430" y="280" width="40" height="70" fill="#F1C27D" />
+  <path d="M430 350 Q420 380 440 380 Q460 380 450 350 Z" fill="#FFD966" />
+  <rect x="440" y="355" width="30" height="60" fill="#FFD966" />
+
+  <!-- Keyboard and Mouse -->
+  <rect x="330" y="340" width="100" height="20" rx="5" ry="5" fill="#444" />
+  <rect x="440" y="340" width="20" height="10" rx="5" ry="5" fill="#444" />
+
+  <!-- Plant -->
+  <ellipse cx="280" cy="280" rx="30" ry="5" fill="#E6B89C" />
+  <rect x="270" y="230" width="20" height="50" rx="5" ry="5" fill="#6C8C4F" />
+  <path d="M280 230 Q270 220 260 230 Q270 240 280 230 Z" fill="#6C8C4F" />
+</svg>
