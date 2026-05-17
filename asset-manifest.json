@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.c097de35.css",
-    "main.js": "/static/js/main.c21b29a6.js",
+    "main.js": "/static/js/main.7d074068.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/bliss.jpg": "/static/media/bliss.e0396a0d786d2c387416.jpg",
     "static/media/CroiClip.jpg": "/static/media/CroiClip.9d3fb5ceaa92dab17615.jpg",
     "static/media/BanffAustin.jpg": "/static/media/BanffAustin.d40c0f98ba4e03ab06fd.jpg",
     "static/media/My Computer.png": "/static/media/My Computer.c594c0be26f379aa824f.png",
@@ -10,16 +11,18 @@
     "static/media/My Pictures.png": "/static/media/My Pictures.2d402354d28011aff6fc.png",
     "static/media/Wordpad.png": "/static/media/Wordpad.40a370cbfab11a8b21d1.png",
     "static/media/Email.png": "/static/media/Email.327a9141027059198a48.png",
+    "static/media/Austin_Tung_Resume.pdf": "/static/media/Austin_Tung_Resume.1b40e99055ebf144027a.pdf",
     "static/media/Command Prompt.png": "/static/media/Command Prompt.5d5d3770ac71947136c6.png",
-    "static/media/AustinTung_Resume_2025.docx.pdf": "/static/media/AustinTung_Resume_2025.docx.b54557b7e6034319512e.pdf",
+    "static/media/Generic Text Document.png": "/static/media/Generic Text Document.73b26632151024ac8351.png",
+    "static/media/windowXP.png": "/static/media/windowXP.75b66d4269c5d504309c.png",
     "static/media/headshot.jpg": "/static/media/headshot.b5f07312c76d5b185294.jpg",
     "index.html": "/index.html",
     "main.c097de35.css.map": "/static/css/main.c097de35.css.map",
-    "main.c21b29a6.js.map": "/static/js/main.c21b29a6.js.map",
+    "main.7d074068.js.map": "/static/js/main.7d074068.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c097de35.css",
-    "static/js/main.c21b29a6.js"
+    "static/js/main.7d074068.js"
   ]
 }
