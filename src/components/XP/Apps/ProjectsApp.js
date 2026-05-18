@@ -37,7 +37,53 @@ NOTE
 ====
 Yes, I know it's 2026. No, I don't care.
 The contrast between "cutting-edge AI systems" and
-"Windows XP UI" is entirely intentional and deeply personal.
+"Windows XP UI" is entirely intentional.
+`,
+  },
+  {
+    id: "mltrader",
+    name: "MLtrader.txt",
+    icon: txtIcon,
+    link: "https://github.com/Tungtwister/MLtrader",
+    content: `PROJECT: MLtrader — Hybrid ML + LLM Trading Bot
+STATUS: Active
+
+OVERVIEW
+========
+A hybrid ML + LLM paper trading bot built as a
+continuation of Georgia Tech's CS 7646: Machine Learning
+for Trading.
+
+The system combines a Bagged Random Tree technical model
+with a Gemini-powered research agent to generate trade
+signals, then executes them via the Alpaca paper trading
+API.
+
+TECH STACK
+==========
+Python, scikit-learn, pandas
+Gemini (LLM research agent)
+Alpaca API (paper trading execution)
+
+ARCHITECTURE
+============
+- Bagged Random Tree model trained on historical price
+  and technical indicator data → quantitative signal
+- Gemini-powered research agent doing news / market
+  synthesis → qualitative signal
+- Hybrid signal combination drives trade decisions
+- Trades executed via Alpaca's paper trading API for
+  live evaluation without real capital
+
+ORIGIN
+======
+Extends coursework from Georgia Tech's CS 7646
+(Machine Learning for Trading) by adding LLM-driven
+qualitative reasoning on top of the classical ML stack.
+
+REPO
+====
+github.com/Tungtwister/MLtrader
 `,
   },
 ];
@@ -68,6 +114,22 @@ function ProjectsApp() {
           <span style={{ fontSize: "11px", fontFamily: "Tahoma, sans-serif", color: "#555" }}>
             My Documents › {proj.name}
           </span>
+          {proj.link && (
+            <a
+              href={proj.link}
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                marginLeft: "auto",
+                fontSize: "11px", fontFamily: "Tahoma, sans-serif",
+                background: "#ece9d8", border: "1px solid #aaa",
+                borderRadius: "2px", padding: "2px 8px",
+                textDecoration: "none", color: "#000",
+              }}
+            >
+              🐙 View on GitHub
+            </a>
+          )}
         </div>
         <pre style={{
           flex: 1, padding: "16px", margin: 0,
