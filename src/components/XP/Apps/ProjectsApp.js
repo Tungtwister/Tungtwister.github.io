@@ -86,6 +86,53 @@ REPO
 github.com/Tungtwister/MLtrader
 `,
   },
+  {
+    id: "campground",
+    name: "CampgroundMonitor.txt",
+    icon: txtIcon,
+    link: "https://github.com/Tungtwister/CampgroundReservation",
+    content: `PROJECT: Campground Reservation Monitor
+STATUS: Active
+
+OVERVIEW
+========
+Watches Recreation.gov for campsite availability and
+alerts you by email (and optionally SMS) the moment a
+site opens up for your dates.
+
+Built to solve a personal problem — popular campgrounds
+book out months in advance, and refreshing the site
+every 15 minutes is not a viable life strategy.
+
+TECH STACK
+==========
+Python 3.10+
+Recreation.gov availability API
+SMTP (Gmail) for email · Carrier gateways for SMS
+Windows Task Scheduler for background automation
+
+FEATURES
+========
+- Real-time polling of Recreation.gov availability
+- Three alert modes:
+    strict → only full multi-night stays
+    any    → any night with openings
+    both   → hybrid of the two
+- State tracking to prevent duplicate alerts
+- Automated background execution every ~15 minutes
+- Lightweight: ~2-3 seconds and ~25 MB per check
+
+DESIGN NOTES
+============
+Emphasis on responsible API usage — reasonable polling
+intervals, minimal resource consumption, and clear setup
+docs so anyone can run it against their own account.
+
+REPO
+====
+github.com/Tungtwister/CampgroundReservation
+`,
+  },
 ];
 
 function ProjectsApp() {
